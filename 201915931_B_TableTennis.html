@@ -182,6 +182,13 @@
           moveToLeft(divLeftTop);
         }
       }
+
+      window.onload = function()
+      {
+        setInterval(ballMove, 50);
+        ScoreUpdate(LeftScore, RightScore);
+        document.addEventListener('keydown', keyDownHandler);
+      }
     </script>
   </head>
   <body>
