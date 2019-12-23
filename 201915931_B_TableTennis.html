@@ -4,9 +4,49 @@
     <meta charset="utf-8">
     <title></title>
     <style media="screen">
-   
+      #LeftUser
+      {
+        background: red;
+        width: 50px;
+        height: 200px;
+        left: 300px;  /* x축 좌표값 */
+        top: 400px; /* y축 좌표값 */
+        position: absolute;
+      }
+      #RightUser
+      {
+        background: blue;
+        width: 50px;
+        height: 200px;
+        left: 1500px;  /* x축 좌표값 */
+        top: 400px; /* y축 좌표값 */
+        position: absolute;
+      }
+
+      #ball
+      {
+          left: 350px;  /* x축 좌표값 */
+          top: 470px; /* y축 좌표값 */
+          border-radius: 30px;
+          width: 50px;
+          height: 50px;
+          background: black;
+          position: absolute;
+      }
+
+      h2
+      {
+        left: 900px;
+        position: absolute;
+      }
     </style>
     <script type="text/javascript">
+      let divLeftTop = 400, divRightTop = 400; // 왼쪽과 오른쪽 유저의 위치(위, 아래)
+      let LeftScore = 0, RightScore = 0; // 왼쪽과 오른쪽 유저의 점수
+      let ballLeft = 350, ballTop = 470; // 공 위치
+      let ballAngle = 1; // 공 각도
+      let ballposition = -1; // -1 : 왼쪽, 1 : 오른쪽
+      let gameWhether = 0; // 게임 여부상황 시작 전 : 0, 시작 후 : 1
 
     </script>
   </head>
